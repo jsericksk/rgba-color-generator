@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/styles.css" rel="stylesheet">
+    <script type="text/javascript" src="js/scripts.js"></script>
+  </head>
+  <body onload="changeColors()">
+    <p><center><div id="currentColor"></div></center></p>
+    <p><center><span id="currentColorHexValue" class="colorValue">#00000000</span></center></p>
+	
+    <center><span id="colorRed" class="colorValue">R: </span></center>
+    <input id="rangeRed" class="sliderRed" type="range" onchange="changeColors()" value="0" min="0" max="255">
+    <p/>
+    <center><span id="colorGreen" class="colorValue">G: </span></center>
+    <input id="rangeGreen" class="sliderGreen" type="range" onchange="changeColors()" value="0" min="0" max="255"/>
+    <p/>
+    <center><span id="colorBlue" class="colorValue">B: </span></center>
+    <input id="rangeBlue" class="sliderBlue" type="range" onchange="changeColors()" value="0" min="0" max="255"/>
+    <p/>
+    <center><span id="colorAlpha" class="colorValue">O: </span></center>
+    <input id="rangeAlpha" class="sliderAlpha" type="range" onchange="changeColors()" value="10" min="0" max="10"/>
+  </body>
+</html>		
